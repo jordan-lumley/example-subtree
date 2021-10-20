@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  gui:
+    image: scrot
+    build: .
+    command: "scrot /images/test.png"
+    volumes:
+      - /tmp/.X11-unix/:/tmp/.X11-unix
+      - ./pics:/images
+    environment:
+      - DISPLAY=unix:0
+    devices:
+      - /dev/dri:/dev/dri:ro

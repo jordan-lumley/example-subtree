@@ -1,0 +1,11 @@
+connection:
+  database:
+    host: 24.154.179.10
+    port: 5488
+    user: atlas_crm_api
+    password: monstrous cymbal caucasian mud
+    name: r2pos
+  rabbitMQUrl:
+nodes:
+  - 12342
+type:
